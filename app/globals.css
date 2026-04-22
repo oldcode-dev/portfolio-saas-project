@@ -1,26 +1,57 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg:           #040B0F;
+  --surface:      #081318;
+  --surface-alt:  #0C1D27;
+  --border:       #153042;
+  --border-light: #1E4560;
+  --accent:       #00D4FF;
+  --accent-dim:   #0088AA;
+  --green:        #00FF88;
+  --green-dim:    #00AA55;
+  --warn:         #FF6B35;
+  --red:          #FF3366;
+  --text:         #E2F0F8;
+  --text-muted:   #5A8FAA;
+  --text-dim:     #2D5570;
+  --font-display: var(--font-syne), system-ui, sans-serif;
+  --font-mono:    var(--font-mono), "JetBrains Mono", monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-display);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
+
+::-webkit-scrollbar        { width: 5px; height: 5px; }
+::-webkit-scrollbar-track  { background: var(--bg); }
+::-webkit-scrollbar-thumb  { background: var(--border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--border-light); }
+
+/* Animations */
+@keyframes fadeUp   { from { opacity:0; transform:translateY(16px); } to { opacity:1; transform:none; } }
+@keyframes slideIn  { from { opacity:0; transform:translateX(20px); } to { opacity:1; transform:none; } }
+@keyframes pulse    { 0%,100% { opacity:1; } 50% { opacity:0.4; } }
+@keyframes spin     { to { transform: rotate(360deg); } }
+
+.animate-fadeUp   { animation: fadeUp  0.4s cubic-bezier(.22,1,.36,1) both; }
+.animate-slideIn  { animation: slideIn 0.35s cubic-bezier(.22,1,.36,1) both; }
+.animate-pulse    { animation: pulse 2s infinite; }
+.animate-spin     { animation: spin 0.8s linear infinite; }
+
+.delay-1 { animation-delay: 0.05s; }
+.delay-2 { animation-delay: 0.10s; }
+.delay-3 { animation-delay: 0.15s; }
+.delay-4 { animation-delay: 0.20s; }
+.delay-5 { animation-delay: 0.25s; }
+.delay-6 { animation-delay: 0.30s; }
