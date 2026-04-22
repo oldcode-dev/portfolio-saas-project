@@ -1,33 +1,36 @@
-# 🎯 Ernest's Personal Portfolio
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Welcome to my digital workspace! I'm Ernest, an IT Support Specialist and aspiring Software Engineer, passionate about using technology to empower individuals and communities—especially in low-resource settings. This portfolio showcases my technical projects, service initiatives, and ongoing learning journey.
+## Getting Started
 
-## 🌍 About Me
+First, run the development server:
 
-I'm a proactive and empathetic learner with a background in Computer Science, hands-on IT support experience, and a growing foundation in web development (JavaScript, Node.js, REST APIs). I blend technical precision with a strong service ethic to solve problems and uplift others.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## 🔧 What You'll Find Here
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- **Projects**: Showcasing my work in IT support automation, web apps, and community-driven tools
-- **Certifications**: Highlights including the Google IT Support Certificate, plus my ongoing progress toward Network+ and Security+
-- **Service & Outreach**: Stories and materials from outreach programs, mentorship, and skill-building trainings
-- **Blog (Optional)**: Reflections on learning, faith, tech challenges, and purpose-driven impact
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## 🚀 Goals
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-- Secure an IT Field Support role (aiming for MTN Ghana or similar)
-- Expand into software engineering while maintaining user-focused support excellence
-- Pursue affordable learning paths including ITIL, Network+, and more
-- Build tools that simplify tech for everyday people
+## Learn More
 
-## 🤝 Let’s Connect
+To learn more about Next.js, take a look at the following resources:
 
-If you're curious, hiring, or just looking to collaborate—I'd love to hear from you! I believe tech becomes most powerful when shared.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-📬 **Email**: [ernestfrimpongopoku.992@outlook.com]
-🔗 **LinkedIn**: [www.linkedin.com/in/ernest-frimpong-opoku-3444b3206]   
-🌐 **Website**: [yourdomain.com]
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
----
+## Deploy on Vercel
 
-_Thanks for stopping by. I’m building not just a career—but a calling._
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
